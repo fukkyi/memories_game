@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WhiteMoonDreams
   m_EditorClassIdentifier: 
   gameObj: {fileID: 1309931265030221113, guid: 41d491063786a074b8e0bce0a8e1ac66, type: 3}
-  memoryName: 
+  memoryName: "WhiteMoonDreams\u306E\u30ED\u30B4"
   description: 

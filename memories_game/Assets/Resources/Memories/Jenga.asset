@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jenga
   m_EditorClassIdentifier: 
   gameObj: {fileID: 4878067798150452501, guid: 2a410ca71be36c34b862dc706e40e9ea, type: 3}
-  memoryName: 
+  memoryName: "\u767D\u71B1\u3057\u305F\u30B8\u30A7\u30F3\u30AC"
   description: 

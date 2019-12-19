@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Phone
   m_EditorClassIdentifier: 
   gameObj: {fileID: 4694878016180869570, guid: 0ad271d878707334cb9b23ade7adaceb, type: 3}
-  memoryName: 
+  memoryName: "\u516C\u8846\u96FB\u8A71"
   description: 

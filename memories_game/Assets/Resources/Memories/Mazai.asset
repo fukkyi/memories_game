@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mazai
   m_EditorClassIdentifier: 
   gameObj: {fileID: 6430992777102725518, guid: 2090d3a969e8e134aa78c4e5a0ccbf4b, type: 3}
-  memoryName: 
+  memoryName: "\u30E2\u30F3\u30B9\u30BF\u30FC\u30A8\u30CA\u30B8\u30FCMAXX"
   description: 

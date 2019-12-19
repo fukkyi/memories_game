@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Convenience
   m_EditorClassIdentifier: 
   gameObj: {fileID: 7149895577448475359, guid: 588d05646276f6e4882c6587274cd307, type: 3}
-  memoryName: 
+  memoryName: "\u30BB\u30D6\u30F3\u30A4\u30EC\u30D6\u30F3\u306E\u4E2D"
   description: 

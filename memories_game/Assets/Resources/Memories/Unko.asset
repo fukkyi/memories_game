@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Unko
   m_EditorClassIdentifier: 
   gameObj: {fileID: 4231571228430080724, guid: 365ffb4e88b486b49978c14c3176b059, type: 3}
-  memoryName: 
+  memoryName: "\u8B0E\u306E\u5EFA\u7269"
   description: 

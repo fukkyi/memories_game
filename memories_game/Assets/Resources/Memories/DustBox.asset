@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DustBox
   m_EditorClassIdentifier: 
   gameObj: {fileID: 2666423270273118370, guid: 8c2362da66e46bb40ad18b08077ea17e, type: 3}
-  memoryName: 
+  memoryName: "\u30B4\u30DF\u7BB1"
   description: 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Clock
   m_EditorClassIdentifier: 
   gameObj: {fileID: 2885630953738719855, guid: a235c34abb03abb46964336ff91343df, type: 3}
-  memoryName: 
+  memoryName: "\u30B9\u30BF\u30F3\u30D5\u30A9\u30FC\u30C9\u5927\u5B66\u306E\u6642\u8A08\u5854"
   description: 

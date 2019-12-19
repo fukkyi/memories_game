@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Uma
   m_EditorClassIdentifier: 
   gameObj: {fileID: 5868557128469992619, guid: ae15e481a7b3a554abf452ee0aa94f2d, type: 3}
-  memoryName: 
+  memoryName: "\u99AC"
   description: 
