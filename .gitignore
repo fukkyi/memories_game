@@ -36,6 +36,7 @@ sysinfo.txt
 *.unitypackage
 
 # Extension
-*.mp4
+*.mp3
+*.mp3.meta
 *.ttf
 *.ttf.meta
