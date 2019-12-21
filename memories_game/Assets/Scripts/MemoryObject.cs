@@ -1,6 +1,21 @@
 ﻿using UnityEngine;
 
-public class MemoryObject : MonoBehaviour {
+public class MemoryObject : ComponentManager {
+
+    void Update()
+    {
+        if (transform.position.y < -4) {
+
+            GetGameComponent().DecTime(10f);
+
+            if (gameObject.layer != LayerMask.NameToLayer("CollidedMemories")) {
+
+                GetGameComponent().Collided();
+            }
+
+            Destroy(gameObject);
+        }
+    }
 
     public void InitObj(string memoryName, Sprite memorySprite) {
 
@@ -21,6 +36,10 @@ public class MemoryObject : MonoBehaviour {
 
     void OnCollisionEnter2D () {
 
-        gameObject.layer = LayerMask.NameToLayer("CollidedMemories");
+        if (gameObject.layer != LayerMask.NameToLayer("CollidedMemories")) {
+
+            gameObject.layer = LayerMask.NameToLayer("CollidedMemories");
+            GetGameComponent().Collided();
+        }
     }
 }

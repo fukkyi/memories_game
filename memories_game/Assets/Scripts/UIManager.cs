@@ -8,11 +8,15 @@ public class UIManager : MonoBehaviour {
     void Awake() {
 
         texts = GetComponentsInChildren<TextMeshProUGUI>();
+        setText("MemoryName", string.Empty);
+        setText("Time", "00:00");
     }
 
     public void setText(string uiName, string inputText) {
 
-        foreach(TextMeshProUGUI text in texts) {
+        if (texts == null) return;
+
+        foreach (TextMeshProUGUI text in texts) {
 
             if (text.name == uiName) {
 

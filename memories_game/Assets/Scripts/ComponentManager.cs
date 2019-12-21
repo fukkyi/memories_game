@@ -6,4 +6,10 @@ public class ComponentManager : MonoBehaviour {
 
         return GameObject.FindWithTag("UIManager").GetComponent<UIManager>();
     }
+
+    protected GameController GetGameComponent() {
+
+        return GameObject.FindWithTag("GameController").GetComponent<GameController>();
+    }
+
 }
