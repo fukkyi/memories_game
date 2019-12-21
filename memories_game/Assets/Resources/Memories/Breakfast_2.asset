@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Breakfast_2
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 6094263099883057417, guid: f12c2c0fba868514eae66c3ca90fcda0, type: 3}
+  memorySprite: {fileID: 21300000, guid: df99b09a60030aa47ae3a80170749f24, type: 3}
   memoryName: "\u30A2\u30E1\u30EA\u30AB\u30F3\u30D6\u30EC\u30A4\u30AF\u30D5\u30A1\u30B9\u30C8"
   description: 

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Kakuni
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 5729801147587488052, guid: a70b5d62fe4cb1e4d8af7120a0a642da, type: 3}
+  memorySprite: {fileID: 21300000, guid: c30aebc0655780442807ef65489157c4, type: 3}
   memoryName: "\u89D2\u716E"
   description: 

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: HollyWood
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 6404090886214521300, guid: 7840c643c00b0a345aa7c7e8940f5008, type: 3}
+  memorySprite: {fileID: 21300000, guid: 6112db13848b69845a36f98a37f1ba34, type: 3}
   memoryName: "\u30CF\u30EA\u30A6\u30C3\u30C9\u770B\u677F"
   description: 

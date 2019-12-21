@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Duck
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 5914067453662234927, guid: 0556bb0c9be78ee4c988cf4595b8aece, type: 3}
+  memorySprite: {fileID: 21300000, guid: 3b5867139c3c1cb42a6a17266e004a55, type: 3}
   memoryName: "\u30C7\u30A3\u30BA\u30CB\u30FC\u30C0\u30C3\u30AF"
   description: 
