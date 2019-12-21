@@ -34,3 +34,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Extension
+*.mp3
+*.mp3.meta
+*.ttf
+*.ttf.meta

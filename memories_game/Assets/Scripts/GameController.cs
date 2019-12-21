@@ -9,6 +9,10 @@ public class GameController : ComponentManager {
     private MemoryGenerator memory = null;
     [SerializeField]
     private Transform originTransform = null;
+    [SerializeField]
+    private AudioSource dropSE = null;
+    [SerializeField]
+    private AudioSource destroySE = null;
 
     [SerializeField]
     private Animator telopAnim = null;
@@ -119,6 +123,7 @@ public class GameController : ComponentManager {
 
         if (Input.GetButtonDown("Drop")) {
 
+            dropSE.Play();
             currentMemory.GetComponent<Rigidbody2D>().simulated = true;
             currentMemory = null;
         }
@@ -199,6 +204,7 @@ public class GameController : ComponentManager {
 
     public void DecTime(float value) {
 
+        destroySE.Play();
         gameTime = Mathf.Clamp(gameTime -= value, 0, Mathf.Infinity);
     }
 
