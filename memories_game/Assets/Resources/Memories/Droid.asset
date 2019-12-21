@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Droid
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 4263180744347694421, guid: 0db45af9c261009478acaa53320604b0, type: 3}
+  memorySprite: {fileID: 21300000, guid: 433bf186895117043a920bee5efe1511, type: 3}
   memoryName: "\u30C9\u30ED\u30A4\u30C9\u541B"
   description: 

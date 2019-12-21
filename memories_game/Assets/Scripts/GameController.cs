@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
-{
-    private Memories[] memories = null;
+public class GameController : ComponentManager {
 
     [SerializeField]
-    private Transform insParent = null;
+    private MemoryGenerator memory = null;
+    [SerializeField]
+    private Transform originTransform = null;
+
     [SerializeField]
     private float insTime = 1.0f;
     [SerializeField]
     private float insHeight = 8.0f;
     [SerializeField]
     private float onceRotValue = 15f;
+    [SerializeField]
+    private float memoryHeight = 0f;
 
     private Quaternion currentRot;
     private GameObject currentMemory = null;
@@ -24,7 +27,6 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
 
-        memories = LoadMemories();
         SetMemoryRotation();
     }
 
@@ -37,7 +39,7 @@ public class GameController : MonoBehaviour
 
             if (currentInsTime > insTime) {
 
-                currentMemory = InsMemories(Vector2.zero, currentRot, insParent);
+                currentMemory = memory.InsMemories(Vector2.zero, currentRot);
                 currentMemory.GetComponent<Rigidbody2D>().simulated = false;
                 currentInsTime = 0;
             }
@@ -49,24 +51,12 @@ public class GameController : MonoBehaviour
 
             InputUpdate();
         }
+
+        memoryHeight = GetMemoryHeight();
     }
 
-    private Memories[] LoadMemories() {
+    private void InputUpdate() {
 
-        Object[] loadObj = Resources.LoadAll("Memories/", typeof(Memories));
-
-        Memories[] contents = new Memories[loadObj.Length];
-
-        for(int i = 0; i < loadObj.Length; i++) {
-
-            contents[i] = loadObj[i] as Memories;
-        }
-
-        return contents;
-    }
-
-    private void InputUpdate()
-    {
         float mouseRotate = Input.GetAxis("Rotate");
 
         if (mouseRotate != 0) {
@@ -80,23 +70,6 @@ public class GameController : MonoBehaviour
             currentMemory.GetComponent<Rigidbody2D>().simulated = true;
             currentMemory = null;
         }
-    }
-
-    private GameObject InsMemories(Vector2 pos, Quaternion rot, Transform parent) {
-
-        int memoriesLength = memories.Length - 1;
-        int number = Random.Range(0, memoriesLength);
-
-        return Instantiate(memories[number].gameObj, pos, rot, parent) as GameObject;
-    }
-
-    private GameObject InsMemories(Vector2 pos, Quaternion rot, Transform parent, int number) {
-
-        int memoriesLength = memories.Length - 1;
-
-        number = Mathf.Clamp(number, 0, memoriesLength);
-
-        return Instantiate(memories[number].gameObj, pos, rot, parent) as GameObject;
     }
 
     private Vector2 GetMousePos2D() {
@@ -117,5 +90,28 @@ public class GameController : MonoBehaviour
 
             currentMemory.transform.rotation = currentRot;
         }
+    }
+
+    private float GetMemoryHeight()
+    {
+        float originY = originTransform.position.y + 0.5f;
+        float height = 0f;
+
+        RaycastHit2D result = Physics2D.BoxCast(
+            origin: new Vector2(originTransform.position.x, insHeight),
+            size: new Vector2(100f, 0.1f),
+            angle: 0f,
+            direction: Vector2.down,
+            distance: Mathf.Abs(insHeight - originY),
+            layerMask: 1 << LayerMask.NameToLayer("CollidedMemories")
+        );
+
+        if (result) {
+
+            height = result.point.y - originY;
+            GetUIComponent().setText("Height", height.ToString("f3"));
+        }
+
+        return height;
     }
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: DustBox
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 2666423270273118370, guid: 8c2362da66e46bb40ad18b08077ea17e, type: 3}
+  memorySprite: {fileID: 21300000, guid: b2976448cbfdccb46b019d7a8194cfe6, type: 3}
   memoryName: "\u30B4\u30DF\u7BB1"
   description: 

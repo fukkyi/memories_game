@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Udon
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 3253602802204048966, guid: 1cd4a180cc39b1c44b3018161b5c7c58, type: 3}
+  memorySprite: {fileID: 21300000, guid: 9ae66a72aa131e249ae6f34f781eff44, type: 3}
   memoryName: "\u30A4\u30F3\u30B9\u30BF\u30F3\u30C8\u3046\u3069\u3093"
   description: 

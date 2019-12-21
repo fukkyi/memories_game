@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Razer
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 238772058062571550, guid: 16241d103c4a8ee4bad714dec56bff2e, type: 3}
+  memorySprite: {fileID: 21300000, guid: 7cba6302dfac9f74f8c64ae39ce06d88, type: 3}
   memoryName: "\u30EC\u30A4\u30B6\u30FC\u30B7\u30E7\u30C3\u30D7\u306E\u770B\u677F"
   description: 

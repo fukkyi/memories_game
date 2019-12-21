@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Twitch
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 3072685757125557768, guid: aaf9e4deaf37f7d44bfc4a38514e4e3f, type: 3}
+  memorySprite: {fileID: 21300000, guid: 7e576689665bf4c499554925647afb92, type: 3}
   memoryName: "Twitch\u306E\u770B\u677F"
   description: 

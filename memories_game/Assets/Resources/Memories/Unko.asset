@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955a3766cb85ea946a5380da680039bc, type: 3}
   m_Name: Unko
   m_EditorClassIdentifier: 
-  gameObj: {fileID: 4231571228430080724, guid: 365ffb4e88b486b49978c14c3176b059, type: 3}
+  memorySprite: {fileID: 21300000, guid: dddb3a1bcca296b45ad4c5cbb78a2205, type: 3}
   memoryName: "\u8B0E\u306E\u5EFA\u7269"
   description: 

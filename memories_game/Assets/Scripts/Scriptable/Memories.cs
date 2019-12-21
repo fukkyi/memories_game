@@ -3,7 +3,7 @@
 [CreateAssetMenu(menuName = "ScriptableObject/Memories", fileName = "Memories")]
 public class Memories : ScriptableObject
 {
-    public GameObject gameObj;
+    public Sprite memorySprite;
 
     public string memoryName;
 
